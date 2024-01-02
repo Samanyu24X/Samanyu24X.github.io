@@ -1,7 +1,100 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with Github Pages,</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samanyu Satheesh</title>
+    <script src="script.js" defer></script>
+  <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+</head>
+<body id="home">
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-custom fixed-top">
+  <ul class="navbar-links">
+    <li><a class="my-link" href="#home">Home</a></li>
+    <li><a class="my-link" href="#projects">Projects</a></li>
+  </ul>
+</nav>
+
+<div class="my-container container mt-5">
+  <div class="profile">
+    <img src="IMG_4904.jpg" alt="Profile Picture">
+    <div class="profile-details">
+      <h1>Welcome to my personal website!</h1>
+      <p>My name is Samanyu Satheesh, and I'm an aspiring software engineer. Currently in my fourth year
+        as a Computer Science major at Cal Poly Pomona, I'm passionate about software engineering and
+        am looking to gain experience in the industry through an internship or full-time position.
+      </p>
+      <p>Born and raised in Mountain View, California, I grew up in a diverse community
+        surrounded by some of the biggest names in tech. This exposure cultivated my interest in technology,
+        with me pursuing fields such as robotics and coding in my younger years. I went on to take several Computer Science
+        courses, with an interest in technology as a career. Following this path, I enrolled
+        at Cal Poly Pomona, majoring in Computer Science.
+      </p>
+      <p>In my freshman year of college, I was diagnosed with non-Hodgkin's Lymphoma at the age of 18 and in 
+        the middle of a deadly worldwide pandemic. Refusing to drop out of college, I continued classes online while 
+        undergoing chemotherapy and surgical operations at home. I've since beat it, 
+        and thanks to my perseverance, am still graduating in only 4 years. Having witnessed firsthand the marginalization
+        faced by those with chronic health issues, I am ambitious to prove that it is possible to face extreme 
+        adversity and still achieve your dreams.
+      </p>
+      <p>In my free time, I love to play the drums, try new foods, and listen to music. I enjoy spending time with friends
+        and family, as well as learning new things. I'm currently learning more about robotics, and how we can use artificial intelligence
+        alongside robotics to solve complex problems. 
+      </p>
+      <p>You can scroll down to see some of the projects I've worked on!
+      </p>
+    </div>
+  </div>
+
+  <div class="projects" id="projects">
+    <h2>Recent Projects</h2>
+    <div class="project">
+      <h3>UAV Fire Detection</h3>
+      <img src="uavpic.PNG" alt="Project 1" style="width: 400px;">
+      <p>In the Fall 2023 Semester, I joined the UAV Fire Detection Project sponsored by Lockheed Martin at Cal Poly Pomona.
+        As the Machine Learning Team Lead, I was tasked with coordinating the ML team members and finding ways for us to collaborate and
+        achieve our goal: our autonomous UAV being able to identify wildfires using machine learning. Using the YOLOv8 software,
+        we were able to train a model to recognize fires with an accuracy rate of about 80%. Through this process, I practiced
+        and built upon my teamwork, leadership, and communication skills, providing updates to the Project Lead in a timely manner.
+        Additionally, I helped present our team's progress and implementation plans to Lockheed Martin represenatives.
+      </p>
+    </div>
+    <div class="project">
+      <h3>Boston Dynamics SPOT Project</h3>
+      <img src="IMG_3296.jpg" alt="Project 2" style="width: 300px;">  
+      <p>In Spring 2023, I joined the CPP Boston Dynamics SPOT Project, where we programmed SPOT to autonomously deliver packages. 
+        Using fiducial markers (sort of like QR codes), SPOT could locate and move towards a package, pick it up using
+        its arm, and deliver it to another marked location. We coded in Python and used the Boston Dynamics SDK to help bridge the gap between
+        the software and hardware components of this robotics project. We presented our project at the College of Science Research Symposium
+        as well as at an Open House for new students.
+      </p>
+      <p>Link to GitHub repository: <a href="https://github.com/Samanyu24X/SPOT-PROJECT">https://github.com/Samanyu24X/SPOT-PROJECT</a></p>
+    </div>
+    <div class="project">
+      <h3>Flashcard Mobile App</h3>
+      <img src="https://camo.githubusercontent.com/4b7134762123191ebfa51a1ec6429114d128cdb4d94125877063665788f53ad2/687474703a2f2f672e7265636f726469742e636f2f3457655532356e4c6c722e676966" 
+      alt="Project 3" style="height: 300px;">
+      <p>In this project, I designed and created an Android app for Flashcard decks using Java and Android Studio. 
+        With my app, users can create, edit, and save their own flashcard sets. When quizzing themselves with the flashcards,
+        they can either click on the card to flip it and reveal the result, or pick one of the three possible answers below. I imported
+        libraries that allowed me to implement special effects, and added an icon for the app itself. I updated and added features to
+        the app over the course of four weeks, and used an Android emulator on my machine to run testcases and debug.
+      </p>
+      <p>Link to GitHub repository: <a href="https://github.com/Samanyu24X/SamanyuSatheeshFlashcardApp">https://github.com/Samanyu24X/SamanyuSatheeshFlashcardApp</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html?
+</html>
