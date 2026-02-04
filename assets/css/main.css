@@ -3291,3 +3291,48 @@ input, select, textarea {
 html {
 	scroll-behavior: smooth;
   }
+
+/* Close button - override all default styles */
+.poptrox-popup .closer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1000;
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poptrox-popup .closer:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #fff;
+}
+
+/* Hide the Font Awesome icon, show only our text X */
+.poptrox-popup .closer:before {
+    content: '×' !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 300 !important;
+    position: static !important;
+    border: none !important;
+    background: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    left: auto !important;
+    top: auto !important;
+    width: auto !important;
+    height: auto !important;
+    line-height: 1 !important;
+    display: block !important;
+}
