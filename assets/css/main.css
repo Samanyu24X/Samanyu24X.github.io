@@ -3236,7 +3236,7 @@ input, select, textarea {
 }
 
 .work-item .image.thumb {
-	height: 200px;        /* Or whatever fixed height you want */
+	height: 275px;        /* Or whatever fixed height you want */
 	overflow: hidden;     /* Hide any overflow from zoom */
 	position: relative;
 	display: block;
@@ -3335,4 +3335,32 @@ html {
     height: auto !important;
     line-height: 1 !important;
     display: block !important;
+}
+
+/* GitHub link button */
+.github-link {
+    display: inline-block;
+    margin-top: 0.75em;
+    padding: 0.4em 1em;
+    background: #333;
+    color: #fff !important;
+    border-radius: 5px;
+    font-size: 0.85em;
+    border: none !important;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.github-link:hover {
+    background: #555;
+    border: none !important;
+}
+
+.github-link i {
+    margin-right: 0.4em;
+}
+
+#projects .work-item .github-link-wrapper {
+    text-align: center;
+    margin-top: 0.5em;
 }
