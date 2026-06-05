@@ -56,6 +56,16 @@
 						<h2>Recent Work</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/ragpipeline.png" class="image fit thumb"><img src="images/ragpipeline.png" alt="" /></a>
+								<h3>RAG Pipeline for Technical Documentation</h3>
+								<p>I built a Retrieval-Augmented Generation pipeline using LangChain to answer questions over technical documentation, systematically tuning chunk size, embedding model, search type, and reranker settings across 30+ configurations. The final system used a GPT-OSS-120B generator, FAISS vector store, and a cross-encoder reranker.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/schemalinking.png" class="image fit thumb"><img src="images/schemalinking.png" alt="" /></a>
+								<h3>Schema Linking with Fine-Tuned LLMs</h3>
+								<p>I fine-tuned small language models (≤2B parameters) using LoRA adapters to perform schema linking, identifying which tables and columns a natural language question references as a core step in NL-to-SQL systems. Testing 30+ configurations across Qwen, Llama, and SmolLM2 model families with NLTK-based schema filtering and hallucination post-processing, the best result was achieved with Qwen3-1.7B using attention-only LoRA.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/mriscan.png" class="image fit thumb"><img src="images/mriscan.png" alt="" /></a>
 								<h3>Neural Networks for MRI</h3>
 								<p>To investigate the applications of Machine Learning in biomedical imaging, I built neural networks that reconstruct high-quality MRI images from just 25% of the usual scan data, potentially cutting patient scan times from 20 minutes to 5. 
