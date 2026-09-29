@@ -10,7 +10,11 @@
 	<head>
 		<title>Samanyu Satheesh</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Samanyu Satheesh — software engineer from the Bay Area and CS master's student at UC San Diego, focused on AI and machine learning." />
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+		<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -56,17 +60,30 @@
 						<h2>Recent Work</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/ragpipeline.png" class="image fit thumb"><img src="images/ragpipeline.png" alt="" /></a>
+								<a href="images/vmpic.jpg" class="image fit thumb"><img src="images/vmpic.jpg" alt="Me pointing at a VectorMachines banner in the office" loading="lazy" /></a>
+								<h3>AI Engineer Intern @ VectorMachines, Inc.</h3>
+								<p>During my internship at VectorMachines, I redesigned the verification process for AI-generated responses, ensuring every figure and claim is validated against source data before it reaches the user.
+									I also designed memory and context-retention systems for AI agents, reducing repeat-query response times and redundant data retrieval across sessions, and optimized the context-loading architecture to cut operational overhead.
+									Along the way, I delivered a custom enterprise deployment and led an onsite technical demonstration, translating customer feedback into shipped product improvements.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/ragpipeline.png" class="image fit thumb"><img src="images/ragpipeline.png" alt="Diagram of a retrieval-augmented generation pipeline" loading="lazy" /></a>
 								<h3>RAG Pipeline for Technical Documentation</h3>
 								<p>I built a Retrieval-Augmented Generation pipeline using LangChain to answer questions over technical documentation, systematically tuning chunk size, embedding model, search type, and reranker settings across 30+ configurations. The final system used a GPT-OSS-120B generator, FAISS vector store, and a cross-encoder reranker.</p>
+								<div class="github-link-wrapper">
+									<a href="https://github.com/shreyamusini/project1_cse234" target="_blank" rel="noopener noreferrer" class="github-link"><i class="fab fa-github"></i> GitHub</a>
+								</div>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/schemalinking.png" class="image fit thumb"><img src="images/schemalinking.png" alt="" /></a>
+								<a href="images/schemalinking.png" class="image fit thumb"><img src="images/schemalinking.png" alt="Schema linking between a natural language question and database tables" loading="lazy" /></a>
 								<h3>Schema Linking with Fine-Tuned LLMs</h3>
 								<p>I fine-tuned small language models (≤2B parameters) using LoRA adapters to perform schema linking, identifying which tables and columns a natural language question references as a core step in NL-to-SQL systems. Testing 30+ configurations across Qwen, Llama, and SmolLM2 model families with NLTK-based schema filtering and hallucination post-processing, the best result was achieved with Qwen3-1.7B using attention-only LoRA.</p>
+								<div class="github-link-wrapper">
+									<a href="https://github.com/shreyamusini/project2_cse234" target="_blank" rel="noopener noreferrer" class="github-link"><i class="fab fa-github"></i> GitHub</a>
+								</div>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/mriscan.png" class="image fit thumb"><img src="images/mriscan.png" alt="" /></a>
+								<a href="images/mriscan.png" class="image fit thumb"><img src="images/mriscan.png" alt="Reconstructed MRI scan" loading="lazy" /></a>
 								<h3>Neural Networks for MRI</h3>
 								<p>To investigate the applications of Machine Learning in biomedical imaging, I built neural networks that reconstruct high-quality MRI images from just 25% of the usual scan data, potentially cutting patient scan times from 20 minutes to 5. 
 									I compared two approaches: one leveraging raw frequency-domain physics, the other learning to remove artifacts directly, achieving a structural similarity index of 98%.</p>
@@ -75,7 +92,7 @@
 								</div>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/collegewishlist.png" class="image fit thumb"><img src="images/collegewishlist.png" alt="" /></a>
+								<a href="images/collegewishlist.png" class="image fit thumb"><img src="images/collegewishlist.png" alt="College recommendation app interface" loading="lazy" /></a>
 								<h3>College Recommender App</h3>
 								<p>During my internship at PM Accelerator, I collaborated on a full-stack college recommendation 
 									platform that helps users find schools based on their academics and interests. We designed the React 
@@ -86,7 +103,7 @@
 								</div>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/recipefinderss.jpeg" class="image fit thumb"><img src="images/recipefinderss.jpeg" alt="" /></a>
+								<a href="images/recipefinderss.jpeg" class="image fit thumb"><img src="images/recipefinderss.jpeg" alt="AI recipe generator web app" loading="lazy" /></a>
 								<h3>AI Recipe Generator</h3>
 								<p>I developed a web application that generates a recipe for any meal as well as a summary of the dish, ingredients, serving sizes, and step-by-step instructions.
 									I used Flask for the backend and leveraged the OpenAI API for integrated prompting. This was a great introduction to applied AI and prompt engineering.
@@ -96,7 +113,7 @@
 								</div>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/uavpic.png" class="image fit thumb"><img src="images/uavpic.png" alt="" /></a>
+								<a href="images/uavpic.jpg" class="image fit thumb"><img src="images/uavpic.jpg" alt="UAV imagery used for fire and smoke detection" loading="lazy" /></a>
 								<h3>UAV ML Fire Detection</h3>
 								<p>I collaborated on the Lockheed-Martin Fire Detection Project at Cal Poly Pomona, leading the ML team 
 									to train a model capable of identifying fires and smoke. We trained a YOLOv8 model using a few thousand images 
@@ -104,7 +121,7 @@
 									College of Engineering Research Symposium.</p>								
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/spotpic.jpg" class="image fit thumb"><img src="images/spotpic.jpg" alt="" /></a>
+								<a href="images/spotpic.jpg" class="image fit thumb"><img src="images/spotpic.jpg" alt="Boston Dynamics SPOT robot carrying a package" loading="lazy" /></a>
 								<h3>Boston Dynamics SPOT</h3>
 								<p>I worked on a research project utilizing the Boston Dynamics SPOT robot to perform 
 									autonomous package deliveries. SPOT was programmed to identify a package, retrieve it, and navigate its way 
@@ -115,7 +132,7 @@
 								</div>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/marketplacepic.jpeg" class="image fit thumb"><img src="images/marketplacepic.jpeg" alt="" /></a>
+								<a href="images/marketplacepic.jpeg" class="image fit thumb"><img src="images/marketplacepic.jpeg" alt="CPP Marketplace campus listings page" loading="lazy" /></a>
 								<h3>CPP Marketplace</h3>
 								<p> At the 2024 Cal Poly Pomona BroncoHacks, I collaborated with a team to develop a full-stack 
 									campus-exclusive marketplace in under 24 hours. Built with Next.js, React, TypeScript, and 
@@ -127,7 +144,7 @@
 								</div>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/nvidiacudapic.jpg" class="image fit thumb"><img src="images/nvidiacudapic.jpg" alt="" /></a>
+								<a href="images/nvidiacudapic.jpg" class="image fit thumb"><img src="images/nvidiacudapic.jpg" alt="NVIDIA GPU used for CUDA programming" loading="lazy" /></a>
 								<h3>CUDA GPU Computing</h3>
 								<p>In my senior year, I studied the NVIDIA CUDA programming language, learning how to harness the 
 									massive parallelism of GPU architecture to accelerate complex computations. Developed in CUDA 
